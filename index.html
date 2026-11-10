@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <!-- <link rel="stylesheet" href="./style/style.css"> -->
+  <link rel="stylesheet" href="./css cdn/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+     <style>
+        h2 ,h5{
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        }
+        .carousel-inner{
+        margin-top: -40px;
+
+        }
+        .card{
+              width: 30%;
+              max-height: 230px;
+              margin-bottom: 20px;
+              
+        }    
+        .card-img-top{
+          height: 200px;
+          width: 300px;
+          border-radius: 60%;
+          border:  solid green;
+        }
+        .ltb{
+          text-decoration: underline;
+        }
+           /* .card-body{
+              min-width: 70%;
+              max-height: 250px;
+            } */
+     </style>
+</head>
+<body>
+    <header>
+    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary shadow-lg p-3 mb-5 bg-body-tertiary roundeds bg-success-subtle">
+  <div class="container-fluid">
+    <h2><a class="navbar-brand fs-2 text " href="#">Nav <span class="text-primary">bar</span></a></h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Contact">Contact</a>
+        </li>  
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> 
+      <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" id="home">
+    <div class="carousel-item active">
+      <img src="./style/img/istockphoto-948403006-612x612.jpg" class="d-block w-100" alt="..." width="100%" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./style/img/mountains-near-water-better-quality.jpg" class="d-block w-100" alt="..." width="100%" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="">Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="d-block w-100" alt="..." width="100%" height="700px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="">Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</header>
+     <section class="my-5 ">
+        <div class="container">
+            <!-- 01 -->
+            <div>
+                <hr>
+                <h2 class="fs-1 text-center m" id="about" style="text-decoration: underline;">About
+                    <span  class="text-primary">Me</span>
+                </h2>
+                <hr>
+            </div>
+            <!-- 01 -->
+             <!-- 02 -->
+              <div class="row">
+                <!-- a -->
+                 <div class="col-sm-12 col-md-6 col-lg-6 col-12 py-4">
+                    <h2 class="text-primary fs-1" style="text-decoration: underline;">Lorem
+                  <span class="text-primary">epsum</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque quasi ex sint! Eveniet laudantium qui unde eum excepturi voluptas et modi ab quae. Ad quaerat minus dolorem molestiae id!
+                    </p>
+
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                 </div>
+             <!-- a -->               
+              
+              <!-- 02 -->
+               <!-- 03 -->
+                
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 py-4 float-lg-end">
+                    <h2 class="text-center fs-2" style="text-decoration: underline;">Lorem
+                  <span class="text-primary">epsum</span>
+                    </h2>
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" alt="" width="600px" class="border-primary text-center img-fluid rounded-3 border p-2" data-aos="fade-down-left">
+                    <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eaque quasi ex sint! Eveniet laudantium qui unde eum excepturi voluptas et modi ab quae. Ad quaerat minus dolorem molestiae id!
+                    </p>
+                    </div>
+                    <hr>
+                <h2 class="fs-1 text-center" id="service" style="text-decoration: underline;">Our
+                    <span class="text-primary">Services</span>
+                </h2>
+                <hr>
+                
+                <!-- card 01 -->
+                <div class="card bg-success-subtle text-center col-sm-12 col-md-6 col-lg-6 col-12 my-5 me-5" data-aos="flip-right">
+                <div class="card-body">
+                 <i class="fa fa-envelope"></i>
+                <h5 class="card-title ">HTML</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+                <!-- card 02 -->
+                <div class="card bg-primary-subtle text-center col-sm-12 col-md-6 col-lg-6 col-12 my-5 me-5" data-aos="flip-right">
+                <div class="card-body">
+                  <i class="fa fa-envelope"></i>
+                <h5 class="card-title ">HTML</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+                <!-- card 03 -->
+                <div class="card bg-success-subtle text-center col-sm-12 col-md-6 col-lg-6 col-12 my-5" data-aos="flip-right">
+                <div class="card-body">
+                  <i class="fa fa-envelope"></i> 
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+                <!-- card 04 -->
+                <div class="card bg-primary-subtle text-center col-sm-12 col-md-6 col-lg-6 col-12 me-5" data-aos="flip-left">
+                <div class="card-body ">
+                  <i class="fa fa-envelope"></i>
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+                <!-- card 05 -->
+                <div class="card bg-success-subtle text-center col-sm-12 col-md-6 col-lg-6 col-12 me-5" data-aos="flip-left">             
+                <div class="card-body">
+                  <i class="fa fa-envelope"></i>     
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+                <!-- card 06 -->
+                <div class="card bg-primary-subtle text-center col-sm-12 col-md-6 col-lg-6 col-12" data-aos="flip-left">              
+                <div class="card-body">
+                  <i class="fa fa-envelope"></i>
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        
+        
+    
+    
+                  <hr>
+                  <h2 class="fs-1 bg-light text-center" style="text-decoration: underline;">Our
+                  <span class="text-primary">Services</span>
+                  </h2>
+                  <hr>
+                  
+                    <div class="bg-success-subtle card text-center col-md-6 col-lg-6 col-12 me-5  my-5 rounded-3" data-aos="fade-down-left">
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="card-img-top"  alt="..."
+                    class="text-center img-fluid rounded-1 " >
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+
+                    </div>
+                    </div>
+                    <div class="bg-success-subtle card col-sm-12 col-md-6 col-lg-6 col-12 my-5 me-5" data-aos="fade-down-left">
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="card-img-top" alt="..."
+                    class="text-center img-fluid rounded-1" >
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+
+                    </div>                
+                    </div>
+
+                    <div class="bg-success-subtle card col-sm-12 col-md-6 col-lg-6 col-12 my-5" data-aos="fade-down-left">
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="card-img-top" alt="..."
+                    class="text-center img-fluid rounded-1" >
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+
+                    </div>
+                    </div>
+                    <div class="bg-success-subtle card text-center col-md-6 col-lg-6 col-12 me-5  my-5 rounded-3" data-aos="fade-down-right">
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="card-img-top" alt="..."
+                    class="text-center img-fluid rounded-1" >
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+
+                    </div>
+                    </div>
+                    <div class="bg-success-subtle card col-sm-12 col-md-6 col-lg-6 col-12 my-5 me-5" data-aos="fade-down-right">
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="card-img-top" alt="..."
+                    class="text-center img-fluid rounded-1" >
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+
+                    </div>                
+                    </div>
+
+                    <div class="bg-success-subtle card col-sm-12 col-md-6 col-lg-6 col-12 my-5" data-aos="fade-down-right">
+                    <img src="./style/img/istockphoto-1407888707-612x612.jpg" class="card-img-top" alt="..."
+                    class="text-center img-fluid rounded-1" >
+                    <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+
+                  </div>
+                </div>
+                <!-- card end -->                 
+                <section class="my-5 ">
+                <div class="container">
+                <!-- 01 -->
+                <div>
+                <hr>
+                <h2 class="fs-1 text-center" id="Contact" style="text-decoration: underline;">Our
+                <span class="text-primary"> Contact</span>
+                </h2>
+                <hr>
+                </div>
+                <!-- 01 -->
+                <!-- 02 -->
+                <div class="row">
+                <!-- a -->
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 py-4">
+               
+
+                <div class="accordion" id="accordionPanelsStayOpenExample" data-aos="fade-down-left" >
+                  <img src="./style/img/istockphoto-1407888707-612x612.jpg" alt="" width="600px" class="border-primary text-center img-fluid rounded-3 border p-2" >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sed non beatae cum ipsam, molestias quam odio aperiam quia eaque pariatur reprehenderit officiis repellat neque asperiores repudiandae aspernatur error aut!
+                </p>
+                </div>
+
+
+                </div>
+                <!-- a -->               
+
+                <!-- 02 -->
+                <!-- 03 -->
+
+                <div class="text-primary bg-success-subtle col-sm-12 col-md-6 col-lg-6 col-12 py-4 float-lg-end">
+                  <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>                
+          </div>
+          </div>
+          </div>
+          </section>
+                    <footer class="text-center fixed-bottom bg-primary-subtle">
+          <h5>
+                       All copyrights &copy; are available | By Kinzul Noman</h2>
+            </h5>
+                    </footer>
+  <script src="./js cdn/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>
